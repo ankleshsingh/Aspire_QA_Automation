@@ -5,9 +5,10 @@
     <classes>
       <class name="com.aspire.test.ManufacturingFeature_Test">
         <methods>
-          <include name="createInventory"/>
-          <include name="initTest"/>
+          <include name="createManufaturing" invocation-numbers="0 1"/>
           <include name="tearDownTest"/>
+          <include name="globalSetup"/>
+          <include name="initTest"/>
         </methods>
       </class> <!-- com.aspire.test.ManufacturingFeature_Test -->
     </classes>

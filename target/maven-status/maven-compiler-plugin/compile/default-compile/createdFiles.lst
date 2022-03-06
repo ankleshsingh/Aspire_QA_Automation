@@ -1,0 +1,15 @@
+com\aspire\base\BaseTest.class
+com\aspire\utils\listeners\LogListener.class
+com\aspire\base\Constants.class
+com\aspire\utils\listeners\ReportListener.class
+com\aspire\utils\ReportUtil.class
+com\aspire\page\common\PageinstancesFactory.class
+com\aspire\page\common\BasePage.class
+com\aspire\page\InventoryPage.class
+com\aspire\utils\LoggerUtil.class
+com\aspire\page\ManufacturingPage.class
+com\aspire\base\WebDriverContext.class
+com\aspire\page\LoginPage.class
+com\aspire\utils\reports\ExtentReportManager.class
+com\aspire\utils\ExcelUtil.class
+com\aspire\utils\TestProperties.class

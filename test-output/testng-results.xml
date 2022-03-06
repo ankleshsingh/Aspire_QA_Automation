@@ -1,25 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="10" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-05T10:44:30Z" name="Default suite" finished-at="2022-03-05T10:44:42Z" duration-ms="11731">
+  <suite started-at="2022-03-06T11:05:51Z" name="Aspire_Automation_Suite" finished-at="2022-03-06T11:07:00Z" duration-ms="68616">
     <groups>
     </groups>
-    <test started-at="2022-03-05T10:44:30Z" name="Default test" finished-at="2022-03-05T10:44:42Z" duration-ms="11731">
-      <class name="com.aspire.test.ManufacturingFeature_Test">
-        <test-method is-config="true" signature="initTest()[pri:0, instance:com.aspire.test.ManufacturingFeature_Test@43b9fd5]" started-at="2022-03-05T10:44:27Z" name="initTest" finished-at="2022-03-05T10:44:30Z" duration-ms="2860" status="PASS">
+    <test started-at="2022-03-06T11:05:51Z" name="Test" finished-at="2022-03-06T11:07:00Z" duration-ms="68616">
+      <class name="com.aspire.test.InventoryFeature_Test">
+        <test-method is-config="true" signature="initTest()[pri:0, instance:com.aspire.test.InventoryFeature_Test@7393222f]" started-at="2022-03-06T11:05:51Z" name="initTest" finished-at="2022-03-06T11:05:55Z" duration-ms="4056" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method signature="createInventory()[pri:0, instance:com.aspire.test.ManufacturingFeature_Test@43b9fd5]" started-at="2022-03-05T10:44:30Z" name="createInventory" description="Test to Create Inventory with Qunatity greater than 10" finished-at="2022-03-05T10:44:42Z" duration-ms="11717" status="PASS">
+        <test-method signature="createInventory(java.lang.String, java.lang.String)[pri:0, instance:com.aspire.test.InventoryFeature_Test@7393222f]" started-at="2022-03-06T11:05:56Z" name="createInventory" description="Test to Create Inventory with various Qunatity" data-provider="getInventoryData" finished-at="2022-03-06T11:06:14Z" duration-ms="18446" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCheese1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createInventory -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.aspire.test.ManufacturingFeature_Test@43b9fd5]" started-at="2022-03-05T10:44:42Z" name="tearDownTest" finished-at="2022-03-05T10:44:42Z" duration-ms="121" status="PASS">
+        <test-method signature="createInventory(java.lang.String, java.lang.String)[pri:0, instance:com.aspire.test.InventoryFeature_Test@7393222f]" started-at="2022-03-06T11:06:15Z" name="createInventory" description="Test to Create Inventory with various Qunatity" data-provider="getInventoryData" finished-at="2022-03-06T11:06:26Z" duration-ms="11726" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCheese2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createInventory -->
+        <test-method signature="createInventory(java.lang.String, java.lang.String)[pri:0, instance:com.aspire.test.InventoryFeature_Test@7393222f]" started-at="2022-03-06T11:06:27Z" name="createInventory" description="Test to Create Inventory with various Qunatity" data-provider="getInventoryData" finished-at="2022-03-06T11:06:38Z" duration-ms="11490" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCheese3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createInventory -->
+        <test-method signature="createInventory(java.lang.String, java.lang.String)[pri:0, instance:com.aspire.test.InventoryFeature_Test@7393222f]" started-at="2022-03-06T11:06:38Z" name="createInventory" description="Test to Create Inventory with various Qunatity" data-provider="getInventoryData" finished-at="2022-03-06T11:06:59Z" duration-ms="20870" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestCheese4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[One]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createInventory -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.aspire.test.InventoryFeature_Test@7393222f]" started-at="2022-03-06T11:07:00Z" name="tearDownTest" finished-at="2022-03-06T11:07:00Z" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- com.aspire.test.InventoryFeature_Test -->
+      <class name="com.aspire.test.LoginFeature_Test">
+        <test-method is-config="true" signature="globalSetup()[pri:0, instance:com.aspire.test.LoginFeature_Test@1e44b638]" started-at="2022-03-06T11:05:51Z" name="globalSetup" finished-at="2022-03-06T11:05:51Z" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- globalSetup -->
+        <test-method is-config="true" signature="initTest()[pri:0, instance:com.aspire.test.LoginFeature_Test@1e44b638]" started-at="2022-03-06T11:05:51Z" name="initTest" finished-at="2022-03-06T11:05:55Z" duration-ms="4121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method signature="inValidLogin()[pri:0, instance:com.aspire.test.LoginFeature_Test@1e44b638]" started-at="2022-03-06T11:05:55Z" name="inValidLogin" description="Test to Validate login failure Sceanrio with invalid credentials" finished-at="2022-03-06T11:05:56Z" duration-ms="1099" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inValidLogin -->
+        <test-method signature="validLogin()[pri:0, instance:com.aspire.test.LoginFeature_Test@1e44b638]" started-at="2022-03-06T11:05:57Z" name="validLogin" description="Test to Validate Successful login Sceanrio with valid credentials" finished-at="2022-03-06T11:06:03Z" duration-ms="6092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method signature="validLoginLogout()[pri:0, instance:com.aspire.test.LoginFeature_Test@1e44b638]" started-at="2022-03-06T11:06:03Z" name="validLoginLogout" description="Test to Validate that after logout page not taking to Home page" finished-at="2022-03-06T11:06:06Z" duration-ms="2456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginLogout -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.aspire.test.LoginFeature_Test@1e44b638]" started-at="2022-03-06T11:06:06Z" name="tearDownTest" finished-at="2022-03-06T11:06:06Z" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- com.aspire.test.LoginFeature_Test -->
+      <class name="com.aspire.test.ManufacturingFeature_Test">
+        <test-method is-config="true" signature="initTest()[pri:0, instance:com.aspire.test.ManufacturingFeature_Test@babafc2]" started-at="2022-03-06T11:05:51Z" name="initTest" finished-at="2022-03-06T11:05:55Z" duration-ms="4157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method signature="createManufaturing()[pri:0, instance:com.aspire.test.ManufacturingFeature_Test@babafc2]" started-at="2022-03-06T11:05:55Z" name="createManufaturing" description="Test to Create Manufacturing record with Product" finished-at="2022-03-06T11:06:10Z" duration-ms="14366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createManufaturing -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.aspire.test.ManufacturingFeature_Test@babafc2]" started-at="2022-03-06T11:06:10Z" name="tearDownTest" finished-at="2022-03-06T11:06:10Z" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
       </class> <!-- com.aspire.test.ManufacturingFeature_Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Aspire_Automation_Suite -->
 </testng-results>

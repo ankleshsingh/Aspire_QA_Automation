@@ -5,11 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
-import com.aspire.baseUtil.GenericUtility;
+import com.aspire.page.common.BasePage;
 
-public class ManufacturingPage  extends GenericUtility{
+public class ManufacturingPage  extends BasePage{
+	private WebDriver driver;
 	public ManufacturingPage(WebDriver driver) {
 		super(driver);
+		this.driver=driver;
 	}
 	@FindBy(xpath = "//div[text()='Manufacturing']")
 	WebElement weManufacturingLink;
@@ -37,11 +39,24 @@ public class ManufacturingPage  extends GenericUtility{
 	
 	@FindBy(xpath = "//button[contains(text(),'Save')]")
 	WebElement weSaveButton;
-
+	
+	/**
+	 * To Navigate to Manufacturing page and validate Create button existence
+	 * @author Anklesh Singh
+	 *
+	 */
+	
 	public void navigateToManufacturingPage() {
 		clickOnElement(weManufacturingLink);
 		Assert.assertEquals(checkWebElementExist(weCreateButton),true);
 	}
+	
+	/**
+	 * To Create Manufacturing entry
+	 * @param sProductName
+	 * @author Anklesh Singh
+	 *
+	 */
 	
 	public void createManufaturingData(String sProductName) throws InterruptedException {
 		clickOnElement(weCreateButton);
