@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Aspire_Automation_Suite">
-	<test thread-count="3" parallel="classes" name="Test">
+	<test thread-count="3" parallel="classes" name="Aspire Regression Suite">
 		<classes>
 			<class name="com.aspire.test.LoginFeature_Test" />
 			<class name="com.aspire.test.InventoryFeature_Test" />
